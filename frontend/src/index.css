@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+*{
+    font-family: 'Roboto Condensed'
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

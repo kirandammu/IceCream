@@ -5,6 +5,7 @@ import { useSearchParams } from 'react-router-dom'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import { useEffect } from 'react'
+import { AiOutlineLoading } from 'react-icons/ai'
 
 const Verify = () => {
 
@@ -42,8 +43,8 @@ const Verify = () => {
     },[token])
 
   return (
-    <div>
-      
+    <div className='flex items-center justify-center'>
+      <AiOutlineLoading className='w-20 h-20 animate-spin text-gray-700'/>
     </div>
   )
 }

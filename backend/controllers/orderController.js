@@ -3,10 +3,9 @@ import User from '../models/User.js'
 import Stripe from 'stripe'
 
 
-const stripe = new Stripe('sk_test_51RwcuKLbSAGmUAyL0MJtJHj99eBgo2xlde7kAutyzh4lLPvvDIZCJuUet8C5XrXuabEWwrmKGulDKDUxhgANoJkT00d4RHGjGb')
 
 export const placeOrderStripe = async (req,res)=>{
-    // const frontend_url = 'http://localhost:5173'
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
     const {origin} = req.headers
     try {
         const newOrder = new Order({

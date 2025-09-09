@@ -122,8 +122,8 @@ const PlaceOrder = () => {
             </div>
           </div>
           <div className='flex gap-x-4'>
-            <p onClick={()=>{setMethod('online')}} className=' flex items-center justify-center border border-blue-600 text-blue-600 w-full py-2 my-6 rounded cursor-pointer'><span className={`${method === 'online' ? 'w-2 h-2 rounded-full bg-red-500 mr-2':''}`}></span>Online Payment</p>
-            <p onClick={()=>{setMethod('COD')}} className=' flex items-center justify-center border border-blue-600 text-blue-600 w-full py-2 my-6 rounded cursor-pointer'><span className={`${method === 'COD' ? 'w-2 h-2 rounded-full bg-red-500 mr-2':''}`}></span>Cash On Delivery</p>
+            <p onClick={()=>{setMethod('online')}} className=' flex items-center justify-center border border-blue-600 text-blue-600 w-full py-2 my-6 rounded cursor-pointer'><span className={`${method === 'online' ? 'w-2 h-2 rounded-full bg-green-500 mr-2':''}`}></span>Online Payment</p>
+            <p onClick={()=>{setMethod('COD')}} className=' flex items-center justify-center border border-blue-600 text-blue-600 w-full py-2 my-6 rounded cursor-pointer'><span className={`${method === 'COD' ? 'w-2 h-2 rounded-full bg-green-500 mr-2':''}`}></span>Cash On Delivery</p>
           </div>
           { method && <button disabled={loading} type='submit' className="bg-gradient-to-r from-purple-700 via-blue-500 to-purple-900 flex items-center justify-center text-white w-full py-2 my-6 rounded-md cursor-pointer">{loading ? <AiOutlineLoading className='text-2xl font-bold animate-spin'/>: method === 'COD' ? "PLACE ORDER":'PROCEED TO PAYMENT'}</button>}        </div>
       </div>

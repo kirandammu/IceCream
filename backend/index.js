@@ -12,7 +12,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const port = 4000
+const port = 'https://icecream-dcsz.onrender.com'
 
 connectDB()
 

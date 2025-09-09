@@ -8,7 +8,7 @@ export const store = createContext()
 
 const ContextProvider = (props) => {
 
-   const url='http://localhost:4000'
+   const url='https://icecream-dcsz.onrender.com'
     const [foodList, setFoodList] = useState([])
     const [token, setToken] = useState('')
     const [showLogin, setShowLogin] = useState(false)

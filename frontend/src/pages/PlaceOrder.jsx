@@ -1,7 +1,5 @@
 import React, { useContext, useState } from 'react'
 import { store } from '../context/Context'
-import { useEffect } from 'react'
-import { placeOrder } from '../../../backend/controllers/orderController'
 import axios from 'axios'
 import { AiOutlineLoading } from 'react-icons/ai';
 
